@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray500: hsl(0, 0%, 42%);
+    --Gray950: hsl(0, 0%, 7%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+    transition: .3s ease-in-out;
+}
+
+body{
+    background-color: var(--yellow);
+}
+
+.container{
+    background-color: var(--White);
+    width: 325px;
+    margin: 150px auto;
+    border-radius: 15px;
+    padding: 22px 20px 25px 20px;
+    box-shadow: 7px 7px;
+    margin-bottom: 90px;
+}
+
+.image{
+    width: 277px;
+    height: 198px;
+    background-image: url(illustration-article.svg);
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+#first{
+    font-weight: 800;
+    font-size: 16px;
+    background-color: var(--yellow);
+    margin-top: 20px;
+    width: fit-content;
+    padding: 7px 10px;
+    border-radius: 10px;
+    color: var(--Gray950);
+}
+
+h4{
+    font-weight: 500;
+    color: var(--Gray950);
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+h1{
+    font-weight: 800;
+    color: var(--Gray950);
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+h1:hover{
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+p{
+    font-weight: 500;
+    color: var(--Gray500);
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.user{
+    margin-top: 25px ;
+    display: flex;
+}
+
+.user h3{
+    font-weight: 800;
+    color: var(--Gray950);
+    font-size: 18px;
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
+
+/*-----------MQ-----------*/
+
+@media screen and (min-width: 500px) {
+    
+    .container{
+        width: 383px;
+        height: 520px;
+        margin-bottom: 100px;
+    }
+    .image{
+        width: 335px;
+        height: 200px;
+    }
+    .user{
+        position: relative;
+        bottom: 15px;
+    }
+
+}
+
+/*----------footer--------*/
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--Gray950);
+    font-weight: 600;
+    background-color: rgb(168, 151, 54);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 16px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+.attribution a { 
+    color: var(--White); 
+    text-decoration: none;
+    font-weight: 800;
+}
+.attribution a:hover{
+    color: var(--yellow);
+}
