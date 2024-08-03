@@ -25,8 +25,8 @@ body{
     margin: 150px auto;
     border-radius: 15px;
     padding: 22px 20px 25px 20px;
-    box-shadow: 7px 7px;
     margin-bottom: 90px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
 }
 
 .image{
@@ -80,14 +80,18 @@ p{
     margin-top: 25px ;
     display: flex;
 }
+.user img{
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+}
 
 .user h3{
     font-weight: 800;
     color: var(--Gray950);
     font-size: 18px;
     position: relative;
-    top: 20px;
-    left: 15px;
+    left: 10px;
 }
 
 /*-----------MQ-----------*/
